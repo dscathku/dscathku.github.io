@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { CSSReset, ThemeProvider } from '@chakra-ui/core';
+
+import { App } from './App';
+
+import 'typeface-roboto';
+import 'typeface-roboto-mono';
+import { theme } from './config/theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <CSSReset />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

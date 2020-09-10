@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box, Stack, Text } from '@chakra-ui/core';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Stack spacing={4}>
+      <Text fontSize={'3xl'}>hello world</Text>
 
-export default App;
+      <Box>
+        {['blue', 'red', 'yellow', 'green'].map((color, index) => (
+          <Box key={index} w={'100%'} h={10} backgroundColor={`brand-${color}.400`} />
+        ))}
+      </Box>
+    </Stack>
+  );
+};
