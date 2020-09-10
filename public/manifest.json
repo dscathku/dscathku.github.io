@@ -3,8 +3,13 @@
   "name": "Google Developer Student Club at HKU",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "logo.ico",
       "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "250x121",
       "type": "image/png"
     }
   ],
