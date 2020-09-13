@@ -11,6 +11,8 @@ export const App = () => {
           <Box key={index} w={'100%'} h={10} backgroundColor={`brand-${color}.400`} />
         ))}
       </Box>
+
+      <Box>hello world again</Box>
     </Stack>
   );
 };
