@@ -1,0 +1,1 @@
+export { useComponentBox } from './useComponentBox';
