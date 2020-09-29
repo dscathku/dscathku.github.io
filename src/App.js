@@ -1,17 +1,40 @@
 import React from 'react';
-import { Box, Stack, Text } from '@chakra-ui/core';
-import Flex from '@chakra-ui/core/dist/Flex';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import { HomePage } from './components/home';
+import { ProjectsPage } from './components/projects';
+import { EventsPage } from './components/events';
+import { AboutPage } from './components/about';
+
+import { Layout } from './components/shared/layout';
+import { NotFound404 } from './components/shared/not-found-404';
 
 export const App = () => {
   return (
-    <Stack spacing={4}>
-      <Text fontSize={'3xl'}>hello world</Text>
+    <Router>
+      <Switch>
+        <Route path={'/projects'}>
+          <ProjectsPage />
+        </Route>
 
-      <Flex mx={10} justifyContent={'space-between'}>
-        {['blue', 'red', 'yellow', 'green'].map((color, index) => (
-          <Box key={index} w={'20%'} h={40} backgroundColor={`brand-${color}.400`} />
-        ))}
-      </Flex>
-    </Stack>
+        <Route path={'/events'}>
+          <EventsPage />
+        </Route>
+
+        <Route path={'/about'}>
+          <AboutPage />
+        </Route>
+
+        <Route exact path={'/'}>
+          <HomePage />
+        </Route>
+
+        <Route path={'*'}>
+          <Layout>
+            <NotFound404 />
+          </Layout>
+        </Route>
+      </Switch>
+    </Router>
   );
 };
