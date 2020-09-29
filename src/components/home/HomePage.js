@@ -7,9 +7,8 @@ import { Jumbotron } from './jumbotron';
 import { Event } from './event';
 import { Purpose } from './purpose';
 import { Objective } from './objective';
-import { Project } from './project';
 
-export const Home = () => {
+export const HomePage = () => {
   return (
     <Layout>
       <Stack spacing={4}>
