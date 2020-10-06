@@ -9,6 +9,8 @@ export const NavBar = () => {
     <Flex
       justifyContent={'space-between'}
       alignItems={'center'}
+      borderBottom={'1px solid'}
+      borderBottomColor={'gray.200'}
       px={[2, 4, 8]}
       py={3}
       color={'gray.600'}
