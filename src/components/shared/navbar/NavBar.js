@@ -9,14 +9,18 @@ export const NavBar = () => {
     <Flex
       justifyContent={'space-between'}
       alignItems={'center'}
+      borderBottom={'1px solid'}
+      borderBottomColor={'gray.200'}
       px={[2, 4, 8]}
       py={3}
       color={'gray.600'}
       fontSize={['md', 'md', 'xl']}>
-      <Stack isInline spacing={8} alignItems={'center'}>
-        <Image src={LogoImage} width={'40px'} />
-        <Text display={['none', 'none', 'block']}>Developer Student Club HKU</Text>
-      </Stack>
+      <RouterLink to={'/'}>
+        <Stack isInline spacing={4} alignItems={'center'}>
+          <Image src={LogoImage} width={'40px'} />
+          <Text display={['none', 'none', 'block']}>Developer Student Club HKU</Text>
+        </Stack>
+      </RouterLink>
 
       <Stack ml={2} isInline spacing={[4, 4, 8]} alignItems={'center'}>
         <RouterLink to={'/projects'} component={Link}>
@@ -31,13 +35,15 @@ export const NavBar = () => {
           About
         </RouterLink>
 
-        <RouterLink to={'/facebook'} component={Link}>
-          <FacebookIcon height={24} width={24} />
-        </RouterLink>
+        <Stack isInline spacing={3} alignItems={'center'}>
+          <RouterLink to={'/facebook'} component={Link}>
+            <FacebookIcon height={24} width={24} />
+          </RouterLink>
 
-        <RouterLink to={'/instagram'} component={Link}>
-          <InstagramIcon height={24} width={24} />
-        </RouterLink>
+          <RouterLink to={'/instagram'} component={Link}>
+            <InstagramIcon height={24} width={24} />
+          </RouterLink>
+        </Stack>
       </Stack>
     </Flex>
   );
