@@ -1,23 +1,23 @@
 import React from 'react';
 import { Box, Text, Flex, Image } from '@chakra-ui/core';
-import { LogoImage } from '../../../assets';
+import { LogoImage, DesignImage, DevelopImage, ConnectImage, TeachImage } from '../../../assets';
 
 export const Objective = () => {
   return (
     <Box>
       <Box m={8} color={'gray.600'}>
         <Text fontSize="3xl">What do we do?</Text>
-        <Box p={4} display={{ lg: 'flex' }} bg="gray.100">
-          <Box width={{ lg: '30vw' }} px={4} bg="brand-red.50">
-            <Flex bg="brand-red.100" display={{ xs: 'flex', lg: 'block' }}>
+        <Box p={4} display={{ lg: 'flex' }}>
+          <Box width={{ lg: '30vw' }} px={4}>
+            <Flex display={{ xs: 'flex', lg: 'block' }}>
               <Image
-                ml={{ lg: 'auto' }}
-                mr={{ lg: 'auto' }}
-                src={LogoImage}
-                width={{ xs: '20vw', lg: '15vw' }}
-                height={{ lg: '15vh' }}></Image>
+                bg="brand-red.400"
+                mx={{ lg: 'auto' }}
+                my={{ xs: ' auto' }}
+                src={DevelopImage}
+                size={{ xs: '12vh', lg: '15vh' }}></Image>
 
-              <Box px={{ xs: 5, lg: 0 }} bg="brand-red.200">
+              <Box px={{ xs: 5, lg: 0 }}>
                 <Text textAlign={{ lg: 'center' }} py={4} fontSize="lg">
                   Develop
                 </Text>
@@ -29,20 +29,19 @@ export const Objective = () => {
             </Flex>
           </Box>
 
-          <Box width={{ lg: '30vw' }} px={4} bg="brand-blue.50">
+          <Box width={{ lg: '30vw' }} px={4}>
             <Flex
-              bg="brand-blue.100"
               display={{ xs: 'flex', lg: 'block' }}
               justify="space-between"
               direction="row-reverse">
               <Image
-                ml={{ lg: 'auto' }}
-                mr={{ lg: 'auto' }}
-                src={LogoImage}
-                width={{ xs: '20vw', lg: '15vw' }}
-                height={{ lg: '15vh' }}></Image>
+                bg="brand-blue.400"
+                mx={{ lg: 'auto' }}
+                my={{ xs: ' auto' }}
+                src={ConnectImage}
+                size={{ xs: '12vh', lg: '15vh' }}></Image>
 
-              <Box px={{ xs: 5, lg: 0 }} bg="brand-blue.200">
+              <Box px={{ xs: 5, lg: 0 }}>
                 <Text textAlign={{ lg: 'center' }} py={4}>
                   Connect
                 </Text>
@@ -54,16 +53,16 @@ export const Objective = () => {
             </Flex>
           </Box>
 
-          <Box width={{ lg: '30vw' }} px={4} bg="brand-green.50">
-            <Flex bg="brand-green.100" display={{ xs: 'flex', lg: 'block' }}>
+          <Box width={{ lg: '30vw' }} px={4}>
+            <Flex display={{ xs: 'flex', lg: 'block' }}>
               <Image
-                ml={{ lg: 'auto' }}
-                mr={{ lg: 'auto' }}
-                src={LogoImage}
-                width={{ xs: '20vw', lg: '15vw' }}
-                height={{ lg: '15vh' }}></Image>
+                bg="brand-green.400"
+                mx={{ lg: 'auto' }}
+                my={{ xs: ' auto' }}
+                src={TeachImage}
+                size={{ xs: '12vh', lg: '15vh' }}></Image>
 
-              <Box px={{ xs: 5, lg: 0 }} bg="brand-green.200">
+              <Box px={{ xs: 5, lg: 0 }}>
                 <Text textAlign={{ lg: 'center' }} py={4}>
                   Teach
                 </Text>
@@ -75,25 +74,28 @@ export const Objective = () => {
             </Flex>
           </Box>
 
-          <Box width={{ lg: '30vw' }} px={4} bg="brand-yellow.50">
+          <Box width={{ lg: '30vw' }} px={4}>
             <Flex
-              bg="brand-yellow.100"
+              bg="brand-yellow.50"
               display={{ xs: 'flex', lg: 'block' }}
               justify="space-between"
               direction="row-reverse">
               <Image
-                ml={{ lg: 'auto' }}
-                mr={{ lg: 'auto' }}
-                src={LogoImage}
-                width={{ xs: '20vw', lg: '15vw' }}
-                height={{ lg: '15vh' }}></Image>
+                bg="brand-yellow.400"
+                mx={{ lg: 'auto' }}
+                my={{ xs: ' auto' }}
+                src={DesignImage}
+                size={{ xs: '12vh', lg: '10vw' }}></Image>
 
-              <Box px={{ xs: 5, lg: 0 }} bg="brand-yellow.200">
-                <Text textAlign={{ lg: 'center' }} py={4}>
+              <Box mx={{ lg: '5vw' }} px={{ xs: '4', lg: '0' }} bg="brand-yellow.100">
+                <Text
+                  fontSize={{ xs: 'md', md: 'lg', lg: 'xl' }}
+                  textAlign={{ lg: 'center' }}
+                  py={3}>
                   Design
                 </Text>
 
-                <Text textAlign={{ lg: 'center' }} py={4}>
+                <Text fontSize={{ xs: 'sm', lg: 'md' }} textAlign={{ lg: 'center' }} pb={2}>
                   Guiding every part of our work from marketing to tech through "design with
                   purpose"
                 </Text>
