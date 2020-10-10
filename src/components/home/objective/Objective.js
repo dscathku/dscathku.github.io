@@ -8,9 +8,9 @@ export const Objective = () => {
       <Text fontSize={{ sm: '2xl', md: '3xl', lg: '4xl' }}>What do we do?</Text>
       <Box pt={4} display={{ lg: 'flex' }}>
         <Box width={{ lg: '30vw' }}>
-          <Flex bg={{ xs: 'brand-red.50', lg: 'white' }} display={{ xs: 'flex', lg: 'block' }}>
+          <Flex pb={4} display={{ xs: 'flex', lg: 'block' }}>
             <Image
-              boxShadow={{ lg: '4px 4px 6px 0px' }}
+              boxShadow={{ xs: '2px 2px 5px', lg: '4px 4px 6px' }}
               bg="brand-red.400"
               mx={{ lg: 'auto' }}
               my={{ xs: ' auto' }}
@@ -32,13 +32,9 @@ export const Objective = () => {
         </Box>
 
         <Box width={{ lg: '30vw' }}>
-          <Flex
-            bg={{ xs: 'brand-blue.50', lg: 'white' }}
-            display={{ xs: 'flex', lg: 'block' }}
-            justify="space-between"
-            direction="row-reverse">
+          <Flex pb={4} display={{ xs: 'flex', lg: 'block' }} direction="row">
             <Image
-              boxShadow={{ lg: '4px 4px 6px 0px' }}
+              boxShadow={{ xs: '2px 2px 5px', lg: '4px 4px 6px' }}
               bg="brand-blue.400"
               mx={{ lg: 'auto' }}
               my={{ xs: ' auto' }}
@@ -60,9 +56,9 @@ export const Objective = () => {
         </Box>
 
         <Box width={{ lg: '30vw' }}>
-          <Flex bg={{ xs: 'brand-green.50', lg: 'white' }} display={{ xs: 'flex', lg: 'block' }}>
+          <Flex pb={4} display={{ xs: 'flex', lg: 'block' }}>
             <Image
-              boxShadow={{ lg: '4px 4px 6px 0px' }}
+              boxShadow={{ xs: '2px 2px 5px', lg: '4px 4px 6px' }}
               bg="brand-green.400"
               mx={{ lg: 'auto' }}
               my={{ xs: ' auto' }}
@@ -84,13 +80,9 @@ export const Objective = () => {
         </Box>
 
         <Box width={{ lg: '30vw' }}>
-          <Flex
-            bg={{ xs: 'brand-yellow.50', lg: 'white' }}
-            display={{ xs: 'flex', lg: 'block' }}
-            justify="space-between"
-            direction="row-reverse">
+          <Flex pb={4} display={{ xs: 'flex', lg: 'block' }} direction="row">
             <Image
-              boxShadow={{ lg: '4px 4px 6px 0px' }}
+              boxShadow={{ xs: '2px 2px 5px', lg: '4px 4px 6px' }}
               bg="brand-yellow.400"
               mx={{ lg: 'auto' }}
               my={{ xs: ' auto' }}
